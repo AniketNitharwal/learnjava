@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 class Employee {
     protected int empid;     
-    private String ename;   
+    private String ename;
 
   
     Employee(int empid, String ename) {
@@ -41,7 +41,7 @@ public class MainProgram {
         System.out.print("Enter Employee ID: ");
         int empid = sc.nextInt();
 
-        sc.nextLine(); // clear buffer
+        sc.nextLine();
         System.out.print("Enter Employee Name: ");
         String name = sc.nextLine();
 
