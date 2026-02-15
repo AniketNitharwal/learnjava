@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-
 class Employee {
     protected int empid;     
     private String ename;

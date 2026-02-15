@@ -26,9 +26,8 @@ class Person extends Account {
         super.input(sc);
 
         System.out.print("Enter Name: ");
-        sc.nextLine();          // clear buffer
+        sc.nextLine();         
         name = sc.nextLine();
-
         System.out.print("Enter Aadhar Number: ");
         aadhar_no = sc.nextLong();
     }

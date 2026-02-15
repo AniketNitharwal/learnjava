@@ -8,7 +8,7 @@ public class UserException {
     static void checkAge(int age) throws AgeException {
         if (age < 18)
             throw new AgeException("Not eligible to vote");
-        else
+        else 
             System.out.println("Eligible to vote");
     }
 

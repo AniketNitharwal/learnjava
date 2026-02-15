@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class Sheet {
     protected double length, width;
 
@@ -11,7 +10,7 @@ class Sheet {
         width = sc.nextDouble();
     }
 
-    double cost2D() {
+    double calculateCost() {
         double area = length * width;
         return area * 40;
     }
@@ -26,24 +25,25 @@ class Box extends Sheet {
         height = sc.nextDouble();
     }
 
-    double cost3D() {
+    double calculateCost() {
         double volume = length * width * height;
         return volume * 60;
     }
 }
 
+// Main class
 public class PlasticCost {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        Box box = new Box();
+        Box b = new Box();
 
         System.out.println("Enter dimensions of plastic box:");
-        box.input3D(sc);
+        b.input3D(sc);
 
-        System.out.println("Cost of 2D Sheet = Rs. " + box.cost2D());
-        System.out.println("Cost of 3D Box   = Rs. " + box.cost3D());
+        System.out.println("Cost of 2D Sheet = Rs. " + b.calculateCost());
+        System.out.println("Cost of 3D Box   = Rs. " + b.calculateCost());
 
         sc.close();
     }
